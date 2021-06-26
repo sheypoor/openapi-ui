@@ -1,12 +1,13 @@
 version: '3.3'
 services:
-  openapi-ui:
-    build: 
-      context: .
-    container_name: openapi-ui
+  swagger-ui:
+    image: sdshariati/openapi-ui:latest
+    container_name: swagger-ui
+    volumes: 
+      - './sample-urls.yaml:/app/config/urls.yaml:ro'
     environment: 
       APP_PORT: 8000
-      CONFIG_MODE: production
+      CONFIG_MODE: test
     ports:
       - "8000:8000"
     
