@@ -4,7 +4,7 @@ services:
     image: sdshariati/openapi-ui:latest
     container_name: swagger-ui
     volumes: 
-      - './sample-urls.yaml:/app/config/urls.yaml:ro'
+      - './config/urls.yaml:/app/config/urls.yaml:ro'
     environment: 
       APP_PORT: 8000
       CONFIG_MODE: test
