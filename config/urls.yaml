@@ -1,0 +1,13 @@
+test:
+  urls:
+    - name: petstore
+      title: 'Pet Store'
+      swagger_url: http://petstore.swagger.io/v2/swagger.json
+production:
+  urls:
+    - name: petstore
+      title: 'Pet Store'
+      swagger_url: http://petstore.swagger.io/v2/swagger.json
+    - name: weather
+      title: Weather
+      swagger_url: https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openapi_openweathermap.yml
