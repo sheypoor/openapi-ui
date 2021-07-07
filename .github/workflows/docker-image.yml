@@ -26,4 +26,4 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: sdshariati/openapi-ui:latest
+        tags: sheypoor/openapi-ui:latest
