@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   swagger-ui:
-    image: sdshariati/openapi-ui:latest
+    image: sheypoor/openapi-ui:latest
     container_name: swagger-ui
     volumes: 
       - './config/urls.yaml:/app/config/urls.yaml:ro'
