@@ -3,7 +3,7 @@ LABEL Author="Saeed Shariati"
 
 WORKDIR /app
 COPY package.json package-lock.json openapi-ui.js /app/
-COPY config /app/config/
+COPY sample/urls.yaml /app/config/urls.yaml
 RUN npm ci --prod
 CMD ["node", "openapi-ui.js"]
 
