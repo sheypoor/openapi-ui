@@ -15,8 +15,9 @@ docker run -p 8080:8080 \
 	-d sdshariati/openapi-ui:latest
 ```
 
-To run the service in Docker Compose we can simply use the available `docker-compose.yml` file and run:
+To run the service in Docker Compose we can simply use the available `sammple/docker-compose.yml` file and run:
 ```shell
+cd sample
 docker-compose up -d
 ```
 
