@@ -4,10 +4,10 @@ services:
     image: sheypoor/openapi-ui:latest
     container_name: swagger-ui
     volumes: 
-      - './config/urls.yaml:/app/config/urls.yaml:ro'
+      - './urls.yaml:/app/config/urls.yaml:ro'
     environment: 
       APP_PORT: 8000
-      CONFIG_MODE: test
+      CONFIG_MODE: production  # defined in the config file (test/production/...)
     ports:
       - "8000:8000"
     
